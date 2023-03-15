@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.container_about{
+    width: 93%;
+    margin: auto;
+}
+#header_buttom{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.hb_left{
+    display: flex;
+    align-items: center;
+}
+.hb_left span{
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hb_left span:hover{
+    color: #C0A483;
+}
+
+.hb_right{
+    align-items: center;
+}
+.logo_img img{
+    width: 100%;
+}
+.logo_img{
+    width: 14%;
+    cursor: pointer;
+}
+.hb_right i{
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hb_right i:hover{
+    color: #C0A483;
+}
+.hb_right a{
+    color: #313131;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.hb_right a:hover{
+    color:#C0A483
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    color:#C0A483
+  }
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown_shop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content_shop {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content_shop a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content_shop a:hover {
+    color:#C0A483
+  }
+
+  .dropdown-content_shop1{
+    width: 25%;
+  }
+  .dropdown-content_shop2{
+    width: 25%;
+  }
+  .dropdown-content_shop3{
+    width: 25%;
+  }
+  .dropdown-content_shop4{
+    width: 25%;
+  }
+
+.dropdown-content_shop a:hover {background-color: #ddd;}
+.dropdown_shop:hover .dropdown-content_shop {display: flex;}
+
+.dropdown_product {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content_product {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content_product a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content_product a:hover {
+    color:#C0A483
+  }
+
+  .dropdown-content_product1{
+    width: 25%;
+  }
+  .dropdown-content_product2{
+    width: 25%;
+  }
+  .dropdown-content_product3{
+    width: 25%;
+  }
+  .dropdown-content_product4{
+    width: 25%;
+  }
+
+.dropdown-content_product a:hover {background-color: #ddd;}
+.dropdown_product:hover .dropdown-content_product {display: flex;}
+
+.dropdown_blog {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content_blog {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 1000px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content_blog a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content_blog a:hover {
+    color:#C0A483
+  }
+
+  .dropdown-content_blog1{
+    width: 25%;
+  }
+  .dropdown-content_blog2{
+    width: 25%;
+  }
+  .dropdown-content_blog3{
+    width: 15%;
+  }
+  .dropdown-content_blog4{
+    width: 35%;
+  }
+
+.dropdown-content_blog3 img{
+    width: 100%;
+}
+
+.dropdown-content_blog a:hover {background-color: #ddd;}
+.dropdown_blog:hover .dropdown-content_blog {display: flex;}
+
+.section1_about{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about.jpg);
+    padding: 20rem 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.section1_about h2{
+    color: white;
+    font-size: 21px;
+    margin-bottom: 14px;
+
+}
+.section1_about h1{
+  color: #FFFFFF;
+  font-style: italic;
+  font-size: 50px;
+}
+
+.section2_about{
+    background-image: url(https://wpbingosite.com/wordpress/kowine/wp-content/uploads/2021/06/about-us.jpg);
+    padding: 5rem 0;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.section7_about{
+  background-color: #C0A483;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.section7_about_icon{
+  width: 13%;
+}
+.section7_about_icon img{
+  width: 100%;
+}
+
+.section7_about_text{
+  width: 87%;
+}
+.section7_about h2{
+  color: #FFFFFF;
+}
+.section7_about p{
+  color: #FFFFFF;
+}
+.section7_about input{
+  padding: 15px 12rem;
+}
+.section7_about button{
+  padding: 15px 25px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+
+.section2_header{
+  text-align: center;
+  margin: 80px 0 25px 0;
+}
+.section2_header span{
+  font-size: 26px;
+}
+.section2_about_right{
+  padding: 10rem 0;
+}
+.section2_about_right h3{
+  font-style: italic;
+    font-weight: 300;
+    font-size: 25px;
+}
+.section2_about_right h2{
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.section2_icon_about{
+  position: absolute;
+  width: 100%;
+  top: 43%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.card:hover .section2_icon_about{
+  visibility: visible;
+  opacity: 1;
+}
+.section2_icon_about i{
+  margin-right: 25px;
+  background-color: white;
+  padding: 14px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section2_icon_about i:hover{
+  color: white;
+  background-color: #C0A483;
+}
+.card{
+  position: relative;
+  padding: 2rem;
+}
+.card span{
+  color: #C0A483;
+}
+
+
+.section3_about{
+  background-color: #882424;
+  text-align: center;
+  padding: 0 7rem;
+}
+.section3_box_about{
+  padding: 1.5rem;
+}
+.section3_box_about img{
+  width: 100%;
+  cursor: pointer;
+}
+.section3_about span{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.section3_about p{
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+.section7_box_about img {
+  margin: auto;
+  height: 76px;
+  width: 76px;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+.section7_header{
+  text-align: center;
+  margin: 80px 0 25px 0;
+}
+.section7_header span{
+  font-size: 26px;
+}
+.section7_box_about h2{
+  font-size: 1px;
+}
+.section7_box_about p{
+  margin: 2rem 0;
+}
+
+.section9 img{
+  width: 100%;
+  transition: 0.3s;
+}
+.section9_box{
+  text-align: center;
+  overflow: hidden;
+  padding: 4rem;
+}
+.section9_box img:hover{
+  transform: scale(1.1);
+}
+
+.section9_header{
+  text-align: center;
+  margin: 80px 0 25px 0;
+}
+.section9_header span{
+  font-size: 26px;
+}
+.section9_header :last-child{
+  color: #C0A483;
+}
+
+
+footer i{
+  margin-right: 30px
+}
+footer h3{
+  font-weight: 400;
+  font-size: 18px;
+}
+.footer_main a{
+    display: block;
+    color:#A5A5A5;
+    font-size: 17px;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+.footer_main a:hover{
+    color:#C0A483;
+}
+.footer_main span{
+    color: #A5A5A5;
+    display: block;
+}
