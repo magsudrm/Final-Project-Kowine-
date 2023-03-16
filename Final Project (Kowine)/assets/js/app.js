@@ -250,73 +250,16 @@ function initSlider(){
         nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
     });
 }
+let burger = document.querySelector(".burger");
+var x1 = document.querySelector(".hamb-content");
+burger.onclick = function() {
+  if (x1.style.display === "block") {
+    x1.style.display = "none"; 
+  } else {
+    x1.style.display = "block";
+  }
+}
 
-
-jQuery(document).ready(function(){
-
-
-  var slickobject = null;
-   jQuery(window).trigger('resize');
-   jQuery(window).resize(function() {
-      if(jQuery(window).width() < 640){
-          $slickobject = jQuery('#slider').slick({}); 
-          jQuery('.date-nav-1').click(function(){
-              $slickobject.slick('slickGoTo','0');
-          });
-          jQuery('.date-nav-2').click(function(){
-              $slickobject.slick('slickGoTo','1');
-          });
-          jQuery('.date-nav-3').click(function(){
-              $slickobject.slick('slickGoTo','2');
-          });
-
-          jQuery('#slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-              if(currentSlide == '0'){
-                  jQuery('.date-nav-1').addClass('active');
-                  jQuery('.date-nav-3').removeClass('active');
-                  jQuery('.date-nav-2').removeClass('active');
-              }
-              else if(currentSlide == '1'){
-                  jQuery('.date-nav-2').addClass('active');
-                  jQuery('.date-nav-1').removeClass('active');
-                  jQuery('.date-nav-3').removeClass('active');
-              }
-              else if(currentSlide == '2'){
-                  jQuery('.date-nav-3').addClass('active');
-                  jQuery('.date-nav-2').removeClass('active');
-                  jQuery('.date-nav-1').removeClass('active');
-              } 
-               console.log(currentSlide);
-          });
-            // left
-      }
-      else if((jQuery(window).width() > 639) && (jQuery(window).width() < 960))
-      {
-              $slickobject = jQuery('#slider').slick({slidesToShow: 2});
-              jQuery('.date-nav-1').click(function(){
-                  $slickobject.slick('slickGoTo','0');
-              });
-              jQuery('.date-nav-3').click(function(){
-                  $slickobject.slick('slickGoTo','1');
-              });                         
-              jQuery('#slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-              if(currentSlide == '0'){
-                  jQuery('.date-nav-1').addClass('active');
-                  jQuery('.date-nav-3').removeClass('active');
-              }
-              else if((currentSlide == '1') || (currentSlide == '2')){
-                  jQuery('.date-nav-3').addClass('active');
-                  jQuery('.date-nav-1').removeClass('active');
-              }
-              console.log(currentSlide);
-          });
-      }
-      else {
-          $slickobject.slick('unslick');
-      }
-});
-
-});
 
 
 const sections = document.querySelectorAll('.section1, .section2, .section3');
@@ -375,3 +318,4 @@ $(document).ready(function(){
 	})
 
 })
+

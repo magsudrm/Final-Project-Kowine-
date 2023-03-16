@@ -253,6 +253,95 @@ a{
 
 .dropdown-content_blog a:hover {background-color: #ddd;}
 .dropdown_blog:hover .dropdown-content_blog {display: flex;}
+#header_buttom a{
+  font-size: 14px;
+  color:#A5A5A5;
+}
+#header_buttom span{
+  position: relative;
+}
+.dropdown-content_shop span::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  bottom: -1px;
+  height: 2px;
+  background-color:#C0A483;
+  left: 0;
+}
+.dropdown-content_product span::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  bottom: -1px;
+  height: 2px;
+  background-color:#C0A483;
+  left: 0;
+}
+.dropdown-content_blog span::before{
+  position: absolute;
+  content: "";
+  width: 40px;
+  bottom: -1px;
+  height: 2px;
+  background-color:#C0A483;
+  left: 0;
+}
+.dropdown-content_blog3 img{
+  margin-bottom: 1.5rem;
+  width:83%;
+}
+.dropdown-content_blog4 h3{
+  font-size: 17px;
+  margin-top: 2.5rem;
+}
+
+.hambmenu {
+  display: none;
+}
+.hambmenu i {
+  cursor: pointer;
+}
+.hambmenu .hamb-content {
+  position: absolute;
+  top: 23px;
+  left: 10;
+  z-index: 100;
+  background-color: white;
+  width: 50%;
+  height: 500px;
+}
+.hambmenu .hamb-content .hamb-m {
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+.hambmenu .hamb-content a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  margin-left: 10px;
+}
+.hambmenu .hamb-content a:hover {
+  color: #DCB883;
+}
+.hamb-content{
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .hambmenu {
+    display: block;
+  }
+  .kowine2 {
+    width: 20%;
+    height: 20px;
+  }
+}
 
 .section5_slider img{
   width: 100%;
